@@ -102,3 +102,6 @@ const invalidCards = findInvalidCards(batch);
 
 // Identify companies
 const invalidCompanies = idInvalidCardCompanies(invalidCards);
+
+console.log(invalidCards);
+console.log(invalidCompanies);
