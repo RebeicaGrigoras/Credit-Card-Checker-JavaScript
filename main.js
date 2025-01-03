@@ -37,3 +37,18 @@ const batch = [
   mystery4,
   mystery5,
 ];
+
+function validateCred(cardNumber) {
+  let sum = 0;
+  for (let i = cardNumber.length - 1; i >= 0; i--) {
+    let digit = cardNumber[i];
+    if ((cardNumber.length - 1 - i) % 2 === 0) {
+      digit *= 2;
+      if (digit > 9) {
+        digit -= 9;
+      }
+    }
+    sum += digit;
+  }
+  return sum % 10 === 0;
+} 
