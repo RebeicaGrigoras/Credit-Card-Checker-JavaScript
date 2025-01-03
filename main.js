@@ -99,3 +99,6 @@ function idInvalidCardCompanies(invalidCards) {
 
 // Find invalid cards
 const invalidCards = findInvalidCards(batch);
+
+// Identify companies
+const invalidCompanies = idInvalidCardCompanies(invalidCards);
