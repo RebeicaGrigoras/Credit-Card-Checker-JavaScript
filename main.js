@@ -51,4 +51,14 @@ function validateCred(cardNumber) {
     sum += digit;
   }
   return sum % 10 === 0;
-} 
+}
+
+function findInvalidCards(nestedArray) {
+  const invalidCards = [];
+  for (const card of nestedArray) {
+    if (!validateCred(card)) {
+      invalidCards.push(card);
+    }
+  }
+  return invalidCards;
+}
